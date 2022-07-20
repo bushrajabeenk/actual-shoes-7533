@@ -1,7 +1,5 @@
 const mongoose=require('mongoose');
 
-const connection=mongoose.connect('mongodb://localhost:27017/Test');
-
 // Task schema
 const TaskSchema=mongoose.Schema({
     title:{type:String,required:true}, 
@@ -22,4 +20,4 @@ const TemplateTaskSchema=mongoose.Schema({
 
 const Templates=mongoose.model('Template',TemplateTaskSchema);
 
-module.exports={connection,Tasks,Templates};
+module.exports={Tasks,Templates};

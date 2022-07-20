@@ -1,10 +1,15 @@
 const { urlencoded } = require('express');
 const express=require('express');
-const TaskRouter=require('./Routes/task.route');
-const templateRouter=require('./Routes/templates');
+const TaskRouter=require('./Tasks/Routes/task.route');
+const templateRouter=require('./Tasks/Routes/templates');
+const Userauth=require('./Auth/Routers/userAuth');
+
 const {connection}=require('./db');
+const cors=require('cors');
 
 const app=express();
+
+app.use(cors());
 app.use(urlencoded({extended:true}));
 app.use(express.json());
 
@@ -12,8 +17,13 @@ app.get('/',(req,res)=>{
     res.send('server');
 })
 
+// Task routes/middlewares
 app.use('/tasks',TaskRouter);
 app.use('/templatetasks',templateRouter);
+
+// Auth routes
+app.use('/signup',Userauth);
+app.use('/login',Userauth);
 
 const port=8080;
 app.listen(port,async ()=>{
