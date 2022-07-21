@@ -5,6 +5,9 @@ import {
   ADD_TODOS_LOADING,
   ADD_TODOS_SUCCESS,
   ADD_TODOS_ERROR,
+  UPDATE_TODOS_LOADING,
+  UPDATE_TODOS_SUCCESS,
+  UPDATE_TODOS_ERROR,
 } from "./types";
 
 const initState = {
@@ -14,6 +17,11 @@ const initState = {
     error: false,
   },
   postTodos: {
+    loading: false,
+    success: false,
+    error: false,
+  },
+  updateTodos: {
     loading: false,
     success: false,
     error: false,
@@ -85,6 +93,40 @@ export const todosReducer = (state = initState, { type, payload }) => {
         ...state,
         postTodos: {
           ...state.postTodos,
+          loading: false,
+          success: false,
+          error: true,
+        },
+      };
+    }
+    case UPDATE_TODOS_LOADING: {
+      return {
+        ...state,
+        updateTodos: {
+          ...state.updateTodos,
+          loading: true,
+          success: false,
+          error: false,
+        },
+      };
+    }
+    case UPDATE_TODOS_SUCCESS: {
+      return {
+        ...state,
+        updateTodos: {
+          ...state.updateTodos,
+          loading: false,
+          success: true,
+          error: false,
+        },
+        todos: [...state.todos, payload],
+      };
+    }
+    case UPDATE_TODOS_ERROR: {
+      return {
+        ...state,
+        updateTodos: {
+          ...state.updateTodos,
           loading: false,
           success: false,
           error: true,
