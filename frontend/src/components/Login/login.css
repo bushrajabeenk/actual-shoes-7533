@@ -63,18 +63,21 @@ input{
     #949494 ;
 }
 .changelog{
-    border: 3px solid white;
     cursor: pointer;
-    overflow: scroll;
     width:330px ;
-    height: 400px;
     margin-top: 10px;
-    text-align: left;
-    padding: 9px;
-    border-left-color: #00ad85
+   
 }
 .changelog>div{
     margin-bottom: 18px;
+}
+.changelog>:last-child{
+    border: 3px solid white;
+    border-left-color: #00ad85;
+    overflow: scroll;
+    height: 390px;
+    padding: 12px;
+    text-align: left;
 }
 #smlbtn{
     background-color: #00ad85;

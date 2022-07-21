@@ -35,6 +35,8 @@ export const Login = () => {
       </div>
       <div id='signin'>
         <div className='changelog'>
+          <div><h5>The Changelog</h5></div>
+          <div>
           <div>
             improvent
             <span>New settings page.</span>
@@ -57,6 +59,7 @@ export const Login = () => {
           </div>
           <div>
             <p>improvent<button id='smlbtn'>Bonsai Cash</button> You might've noticed the dashboard got a visual uplift. It's not just looks though</p>
+          </div>
           </div>
         </div>
         <div id='sec'>
