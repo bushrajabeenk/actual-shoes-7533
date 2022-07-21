@@ -13,8 +13,8 @@ userRoute.post("/signup",(req,res)=>{
 })
 
 userRoute.post("/login",async(req,res)=>{
-    const {username, password} = req.body;
-    const validUser= await user.find({username,password})
+    const {email, password} = req.body;
+    const validUser= await user.find({email,password})
     if(validUser.length < 1){
         return res.status(401).send({message:"Invalid Credentials"})
     }

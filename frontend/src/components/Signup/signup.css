@@ -26,6 +26,8 @@
     padding-left: 125px;
     background-size: 25px;
     background-repeat: no-repeat;
+    width: 250px;
+    margin-top: 15px;
 }
 .boxess{
     width: 360px;
@@ -35,8 +37,8 @@
     border: 1px solid #ccd0d2;
     padding-left: 15px;
 }
-p{
-    font-size: small;
+.p1{
+    text-align: center;
     line-height: 5px;
 }
 #select{
@@ -54,14 +56,16 @@ p{
     margin-top: 20px;
     margin-bottom: 10px;
     cursor: pointer;
+    padding: 12px 15px;
 }
-.login{
+.loged{
    border: 1px solid #00b087 ;
     color: #00b087;
     width: 370px;
     font-size: 17px;
     margin-top: 20px;
     cursor: pointer;
+    padding: 12px 15px;
 }
 ul{
   display: flex;

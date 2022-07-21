@@ -1,8 +1,26 @@
 import React from 'react'
 import './Signup.css'
 import { FaQuoteLeft } from 'react-icons/fa';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
 
 export const Signup = () => {
+  const [formData, setFormData]= useState({})
+  const nav= useNavigate()
+
+  const handleChange= (e)=>{
+      const {value,name} = e.target
+      setFormData({
+        ...formData,
+        [name]: value,
+      })
+  }
+  const handelLogin=async ()=>{
+    const {data} = await axios.post("http://localhost:8080/user/signup",formData)
+     console.log(data)
+    nav("/Login")
+  }
   return (
     <div>
       <div id='main'>
@@ -20,15 +38,15 @@ export const Signup = () => {
 
       <div id='bonsaiFree'>
         <h2>Try Bonsai free with your <br /> Workflow today</h2>
-        <input type="text" id='ggl' placeholder='Sign Up with Google' style={{width:"250px", marginTop:"15px"}}/><br />
-        <p style={{textAlign:"center"}}>or</p> <br />
+        <input type="text" id='ggl' placeholder='Sign Up with Google'/><br />
+        <p className="p1">or</p> <br />
         <div style={{marginTop:"-30px"}}>
         <p >EMAIL</p><br />
-        <input type="text" placeholder='Your @ email.com' className='boxess'/><br />
+        <input type="text" placeholder='Your @ email.com' className='boxess' name='email' onChange={handleChange}/><br />
         <p >FULL NAME</p><br />
-        <input type="text" placeholder='Jane Smith' className='boxess'/><br />
+        <input type="text" placeholder='Jane Smith' className='boxess' name='username' onChange={handleChange}/><br />
         <p >PASSWORD</p><br />
-        <input type="text" placeholder='.......' className='boxess'/>
+        <input type="text" placeholder='.......' className='boxess' name='password' onChange={handleChange}/>
         <p>Your password must be at least 6 charracters</p>
         <div id='select'>
          <div>
@@ -57,9 +75,9 @@ export const Signup = () => {
         </div>
         </div>
         <p style={{textAlign:"center"}}><u>Term and Conditions</u></p>
-        <button className='account'>Create Free Account</button>
+        <button className='account'  onClick={handelLogin }>Create Free Account</button>
         <p style={{textAlign:"center"}}>Already have an account?</p>
-        <button  className='login'>Login</button>
+        <button className='loged'>Login</button>
       </div>
       </div>
       </div>
