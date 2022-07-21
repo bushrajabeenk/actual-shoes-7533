@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 // userschema for store signup data
 const userSchema = mongoose.Schema({
   fullname: { type: String, require: true },
