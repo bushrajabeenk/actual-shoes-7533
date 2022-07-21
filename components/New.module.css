@@ -1,0 +1,88 @@
+.heading {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 70px;
+}
+.heading1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Proximanova opt", sans-serif;
+  text-decoration: none solid rgb(76 82 90);
+  color: #4c525a;
+  word-spacing: 0px;
+}
+.heading2 {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Proximanova opt", sans-serif;
+  text-decoration: none solid rgb(76 82 90);
+  color: #4c525a;
+  word-spacing: 0px;
+}
+.heading3 {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Proximanova opt", sans-serif;
+  text-decoration: none solid rgb(128 128 128);
+  color: #4c525a;
+  word-spacing: 0px;
+}
+.container {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  width: 100%;
+  background-color: #f3f3f7;
+  gap: 20px;
+}
+
+.main {
+  background-color: #ffffff;
+  width: 670px;
+  padding: 155px 36px 24px 36px;
+  border-radius: 10px;
+}
+.main1 {
+  background-color: #ffffff;
+  width: 706px;
+  padding: 0px 36px 24px 0px;
+  border-radius: 10px;
+}
+.main img {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.main1 img {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.mainp {
+  margin: 0%;
+  font-size: 22px;
+  line-height: 30.8px;
+  font-family: "Proximanova opt", sans-serif;
+  text-decoration: none solid rgb(76 82 90);
+  color: #4c525a;
+  word-spacing: 0px;
+  width: 643.6px;
+}
+.mainh3 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  font-family: "Proximanova opt", sans-serif;
+  text-decoration: none solid rgb(76 82 90);
+  color: #4c525a;
+  word-spacing: 0px;
+  width: 643.6px;
+}
+.mainh31 {
+  font-size: 20px;
+  line-height: 0px;
+  font-family: "Proximanova opt", sans-serif;
+  text-decoration: none solid rgb(76 82 90);
+  color: #8e9297;
+  word-spacing: 0px;
+  width: 643.6px;
+}
