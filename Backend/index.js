@@ -2,7 +2,8 @@ const { urlencoded } = require('express');
 const express=require('express');
 const TaskRouter=require('./Tasks/Routes/task.route');
 const templateRouter=require('./Tasks/Routes/templates');
-const Userauth=require('./Auth/Routers/userAuth');
+const userRouterers = require('./Auth/Routers/person');
+const userRoute = require("./Auth/Routers/user");
 
 const {connection}=require('./db');
 const cors=require('cors');
@@ -22,8 +23,11 @@ app.use('/tasks',TaskRouter);
 app.use('/templatetasks',templateRouter);
 
 // Auth routes
-app.use('/signup',Userauth);
-app.use('/login',Userauth);
+// app.use('/signup',Userauth);
+// app.use('/login',Userauth);
+
+app.use("/user", userRoute)
+app.use("/profile",userRouterers)
 
 const port=8080;
 app.listen(port,async ()=>{
