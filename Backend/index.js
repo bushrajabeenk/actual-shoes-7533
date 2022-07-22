@@ -29,7 +29,7 @@ app.use('/templatetasks',templateRouter);
 app.use("/user", userRoute)
 app.use("/profile",userRouterers)
 
-const port=8080;
+const port=process.env.PORT || 8080;
 app.listen(port,async ()=>{
     await connection;
 try{
