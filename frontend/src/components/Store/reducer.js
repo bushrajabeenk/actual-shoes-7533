@@ -98,7 +98,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
           success: true,
           error: false,
         },
-        todos: [...state.todos, payload],
+        todos: [...state.todos, payload || ""],
       };
     }
 

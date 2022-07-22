@@ -5,14 +5,14 @@ import { deleteTodoAPI } from "../Store/actions";
 const TaskItem = ({ d, setNewTodo }) => {
   const dispatch = useDispatch();
 
-  const { deleteTodo, todos } = useSelector((state) => state.todo);
+  const { deleteTodo } = useSelector((state) => state.todo);
 
   const handleDelete = () => {
     dispatch(deleteTodoAPI(d.id));
   };
 
   return (
-    <div>
+    <div style={{ paddingBottom: "10px" }}>
       <div
         style={{
           margin: "auto",
@@ -23,12 +23,20 @@ const TaskItem = ({ d, setNewTodo }) => {
       >
         <input
           style={{
+            float: "left",
+          }}
+          type="checkbox"
+        />
+        <input
+          style={{
             border: "none",
           }}
+          value={d}
           type="text"
           onChange={(e) => setNewTodo(e.target.value)}
         />
-        <select>
+        <select style={{ float: "right", border: "none" }}>
+          <option>...</option>
           <option>Mark Complete</option>
           <option>Archive Task</option>
           <option onClick={handleDelete}>Delete Task</option>
