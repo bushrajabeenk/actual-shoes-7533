@@ -1,8 +1,8 @@
 import { legacy_createStore as createStore } from "redux";
 import thunk from "redux-thunk";
-import { todosReducer } from './reducer';
+import { todosReducer } from "./reducer";
 
-const rootReducer = combineReducers(todosReducer);
+const rootReducer = combineReducers({ todo: todosReducer });
 
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

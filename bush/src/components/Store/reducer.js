@@ -2,9 +2,9 @@ import {
   GET_TODOS_LOADING,
   GET_TODOS_SUCCESS,
   GET_TODOS_ERROR,
-  ADD_TODOS_LOADING,
-  ADD_TODOS_SUCCESS,
-  ADD_TODOS_ERROR,
+  POST_TODOS_LOADING,
+  POST_TODOS_SUCCESS,
+  POST_TODOS_ERROR,
   UPDATE_TODOS_LOADING,
   UPDATE_TODOS_SUCCESS,
   UPDATE_TODOS_ERROR,
@@ -19,7 +19,7 @@ const initState = {
     success: false,
     error: false,
   },
-  postTodos: {
+  postTodo: {
     loading: false,
     success: false,
     error: false,
@@ -68,22 +68,22 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
-    case ADD_TODOS_LOADING: {
+    case POST_TODOS_LOADING: {
       return {
         ...state,
-        postTodos: {
-          ...state.postTodos,
+        postTodo: {
+          ...state.postTodo,
           loading: true,
           success: false,
           error: false,
         },
       };
     }
-    case ADD_TODOS_SUCCESS: {
+    case POST_TODOS_SUCCESS: {
       return {
         ...state,
-        postTodos: {
-          ...state.postTodos,
+        postTodo: {
+          ...state.postTodo,
           loading: false,
           success: true,
           error: false,
@@ -91,11 +91,11 @@ export const todosReducer = (state = initState, { type, payload }) => {
         todos: [...state.todos, payload],
       };
     }
-    case ADD_TODOS_ERROR: {
+    case POST_TODOS_ERROR: {
       return {
         ...state,
-        postTodos: {
-          ...state.postTodos,
+        postTodo: {
+          ...state.postTodo,
           loading: false,
           success: false,
           error: true,
@@ -135,6 +135,25 @@ export const todosReducer = (state = initState, { type, payload }) => {
           error: true,
         },
       };
+    }
+    case DELETE_TODOS_LOADING: {
+      return {
+        ...state,
+      };
+    }
+    case DELETE_TODOS_SUCCESS: {
+      return {
+        ...state,
+        todos: [],
+      };
+    }
+    case DELETE_TODOS_ERROR: {
+      return {
+        ...state,
+      };
+    }
+    default: {
+      return state;
     }
   }
 };
