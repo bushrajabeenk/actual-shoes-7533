@@ -5,7 +5,7 @@ import { Home } from "../components/Home-afterLogin/Home";
 import { Login } from "../components/Login/Login";
 import TaskComponent from "../components/Tasks/TaskComponent";
 
-export const Mainroute = () => {
+export const AllRoutes = () => {
   return (
     <div>
       <Routes>
