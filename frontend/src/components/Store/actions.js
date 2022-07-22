@@ -17,7 +17,7 @@ import {
 export const getTodosAPI = () => (dispatch) => {
   dispatch({ type: GET_TODOS_LOADING });
   axios
-    .get("")
+    .get("http://localhost:8080/todos")
     .then((r) => {
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
     })
@@ -29,7 +29,7 @@ export const getTodosAPI = () => (dispatch) => {
 export const postTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: POST_TODOS_LOADING });
   axios
-    .post("", payload)
+    .post("http://localhost:8080/todos", payload)
     .then((r) => {
       dispatch({ type: POST_TODOS_SUCCESS, payload: r.data });
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
@@ -55,7 +55,7 @@ export const updateTodoAPI = (payload) => (dispatch) => {
 export const deleteTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: DELETE_TODOS_LOADING });
   axios
-    .delete("")
+    .delete(`http://localhost:8080/todos/${payload.id}`)
     .then((r) => {
       dispatch({ type: DELETE_TODOS_SUCCESS, payload: r.data });
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });

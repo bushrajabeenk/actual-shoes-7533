@@ -7,9 +7,9 @@ import {
 import thunk from "redux-thunk";
 import { todosReducer } from "./reducer";
 
-const rootReducer = combineReducers({ todo: todosReducer });
-
 const composeEnhancers = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const rootReducer = combineReducers({ todo: todosReducer });
 
 export const store = createStore(
   rootReducer,
