@@ -1,6 +1,6 @@
 #sidebar{
  border: 1.5px solid #c5c5c5;
- width: 13%;
+ flex: 1;
 }
 #fst{
     display: flex;
@@ -59,4 +59,42 @@ a>:last-child{
 .last{
     margin-top: 130px;
     padding-right: 17px;
+}
+#home{
+    display: flex;
+}
+#rightmain{
+    flex: 6;
+}
+#top{
+    height: 10%;
+    display: flex;
+    border: 1px solid #c5c5c5;
+    justify-content: space-between;
+    padding: 10px 20px 0px 20px;
+    align-items: center;
+}
+.crown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    font-size: 11px;
+    padding: 10px 25px 10px 18px;
+    color: white;
+    background-color: 
+    #00b087;
+    border: none;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.b2{
+    color: #00b289;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.play{
+    font-size: 25px;
 }

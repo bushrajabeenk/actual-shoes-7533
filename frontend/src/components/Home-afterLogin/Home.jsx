@@ -13,10 +13,13 @@ import {TbReceiptTax} from 'react-icons/tb'
 import {ImFileText2} from 'react-icons/im'
 import {BiGift} from 'react-icons/bi'
 import {AiOutlineStar} from 'react-icons/ai'
+import {FaCrown} from 'react-icons/fa'
+import {BsPlayCircle} from 'react-icons/bs'
 
 export const Home = () => {
   return (
-    <div>
+    <div id='home'>
+      {/* sidebar */}
       <div id='sidebar'>
         <div id='fst'>
           <div><img src="https://app.hellobonsai.com/packs/static/bonsai-623ed86a47a195e7f9e2.svg" alt="" width="110px"/></div>
@@ -79,6 +82,27 @@ export const Home = () => {
 
          <div className='last'><AiOutlineStar/><span className='star'>Upgrade Your plan</span></div>
         </div>
+      </div>
+
+
+      {/* navbar */}
+
+      <div id='rightmain'>
+       <div id='top'>
+       <div>
+        <input type='text' placeholder='Search'/>
+        </div>
+        <div className='crown'>
+          <div>
+            <button className='b1'><FaCrown/> Start Free Trial</button>
+          </div>
+          <div>
+            <button className='b2'><BsPlayCircle className='play'/></button>   
+          </div>
+          <div>Start Timer</div>
+       </div>
+      </div>
+      <div></div>
       </div>
     </div>
   )
