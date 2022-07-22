@@ -13,3 +13,5 @@ export const UPDATE_TODOS_ERROR = "update/failure";
 export const DELETE_TODOS_LOADING = "delete/loading";
 export const DELETE_TODOS_SUCCESS = "delete/success";
 export const DELETE_TODOS_ERROR = "delete/failure";
+
+export const TOGGLE_TODOS = "toggle";

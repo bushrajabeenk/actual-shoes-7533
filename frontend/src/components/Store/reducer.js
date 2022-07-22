@@ -11,6 +11,7 @@ import {
   DELETE_TODOS_LOADING,
   DELETE_TODOS_SUCCESS,
   DELETE_TODOS_ERROR,
+  TOGGLE_TODOS,
 } from "./types";
 
 const initState = {
@@ -25,6 +26,11 @@ const initState = {
     error: false,
   },
   updateTodos: {
+    loading: false,
+    success: false,
+    error: false,
+  },
+  deleteTodo: {
     loading: false,
     success: false,
     error: false,
@@ -45,6 +51,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
+
     case GET_TODOS_SUCCESS: {
       return {
         ...state,
@@ -57,6 +64,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         todos: payload,
       };
     }
+
     case GET_TODOS_ERROR: {
       return {
         ...state,
@@ -68,6 +76,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
+
     case POST_TODOS_LOADING: {
       return {
         ...state,
@@ -79,6 +88,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
+
     case POST_TODOS_SUCCESS: {
       return {
         ...state,
@@ -91,6 +101,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         todos: [...state.todos, payload],
       };
     }
+
     case POST_TODOS_ERROR: {
       return {
         ...state,
@@ -102,6 +113,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
+
     case UPDATE_TODOS_LOADING: {
       return {
         ...state,
@@ -113,6 +125,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
+
     case UPDATE_TODOS_SUCCESS: {
       return {
         ...state,
@@ -122,9 +135,12 @@ export const todosReducer = (state = initState, { type, payload }) => {
           success: true,
           error: false,
         },
-        todos: [...state.todos, payload],
+        todos: state.todos.map((todo) =>
+          todo.id === payload.id ? { ...todo } : todo
+        ),
       };
     }
+
     case UPDATE_TODOS_ERROR: {
       return {
         ...state,
@@ -136,22 +152,56 @@ export const todosReducer = (state = initState, { type, payload }) => {
         },
       };
     }
+
     case DELETE_TODOS_LOADING: {
       return {
         ...state,
+        deleteTodo: {
+          ...state.getTodos,
+          loading: true,
+          success: false,
+          error: false,
+        },
       };
     }
+
     case DELETE_TODOS_SUCCESS: {
       return {
         ...state,
-        todos: [],
+        deleteTodo: {
+          ...state.getTodos,
+          loading: false,
+          success: true,
+          error: false,
+        },
+        todos: state.todos.filter((item) => item.id !== payload.id),
       };
     }
+
     case DELETE_TODOS_ERROR: {
       return {
         ...state,
+        deleteTodo: {
+          ...state.getTodos,
+          loading: false,
+          success: false,
+          error: true,
+        },
       };
     }
+
+    case TOGGLE_TODOS: {
+      state.todos.map((items) => {
+        if (items.id === payload) {
+          items.status = !items.status;
+        }
+      });
+      return {
+        ...state,
+        todos: [...state.todos],
+      };
+    }
+
     default: {
       return state;
     }

@@ -12,6 +12,7 @@ import {
   DELETE_TODOS_LOADING,
   DELETE_TODOS_SUCCESS,
   DELETE_TODOS_ERROR,
+  TOGGLE_TODOS,
 } from "./types";
 
 export const getTodosAPI = () => (dispatch) => {
@@ -42,7 +43,7 @@ export const postTodoAPI = (payload) => (dispatch) => {
 export const updateTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: UPDATE_TODOS_LOADING });
   axios
-    .put("", payload)
+    .put(`http://localhost:8080/todos/${payload.id}`, payload)
     .then((r) => {
       dispatch({ type: UPDATE_TODOS_SUCCESS, payload: r.data });
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
@@ -64,3 +65,7 @@ export const deleteTodoAPI = (payload) => (dispatch) => {
       dispatch({ type: DELETE_TODOS_ERROR, payload: err });
     });
 };
+
+// export const toggleTodoAPI = (payload) => (dispatch) => {
+//   axios
+// }
