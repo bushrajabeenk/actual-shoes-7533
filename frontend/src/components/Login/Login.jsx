@@ -36,34 +36,36 @@ export const Login = () => {
       <div id='signin'>
         <div className='changelog'>
           <div><h5>The Changelog</h5></div>
+          <div id='smldiv'>
           <div>
-          <div>
-            improvent
-            <span>New settings page.</span>
-            <span>The settings quicker to whare you need,and get a...</span>
+            <span className='c1'>improvent</span>
+            <span className='c2'>New settings page.</span>
+            <span className='c3'>The settings page now has section on the left so you get quicker to whare you need,and get a...</span>
           </div>
           <div>
             <button id='smlbtn'>New</button>
-            <span>Request upfront deposits on your proposals(US only)</span><p>
-              Secure your work at the start of every project by requiring a deposit on your proposal.In just...
-            </p>
+            <span className='c2'>Request upfront deposits on your proposals(US only)</span>
+            <span className='c3'>Secure your work at the start of every project by requiring a deposit on your proposal.In just...</span> 
           </div>
           <div>
           <button id='smlbtn'>New</button>
-            <h5>Use your email address for notifications sent to your client from bonsai</h5><p>
-              Set your next at the start of every project by requiring a deposit on your proposal.Insted of from...
-            </p>
+            <span className='c2' >Use your email address for notifications sent to your client from bonsai</span>
+            <span className='c3' > Set your next at the start of every project by requiring a deposit on your proposal.Insted of from...</span>
           </div>
           <div>
-          <p>improvent<h5>New settings page.</h5>The settings quicker to whare you need,and get a...</p>
+          <span className='c1'>improvent</span>
+            <span className='c2'>Look Like a pro with your custom brand.</span>
+            <span className='c3'>Add your custom brand to all your future invoices and contracts.Look profesnioals with every...</span>
           </div>
           <div>
-            <p>improvent<button id='smlbtn'>Bonsai Cash</button> You might've noticed the dashboard got a visual uplift. It's not just looks though</p>
+          <span className='c1'>improvent</span>
+          <button id='smlbtn'>Bonsai Cash</button>
+          <span className='c3'> You might've noticed the dashboard got a visual uplift. It's not just looks though</span>
           </div>
           </div>
         </div>
         <div id='sec'>
-          <p id='top'>Sign In</p>
+          <p id='text'>Sign In</p>
           <input type="text" id='ggl' placeholder='Sign Up with Google' style={{width:"200px", marginTop:"15px"}}/><br />
           <p style={{textAlign:"center",marginBottom:"0px"}}>or</p> <br />
           <p>Please enter a valid email address</p>

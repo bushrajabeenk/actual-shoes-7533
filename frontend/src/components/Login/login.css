@@ -64,19 +64,19 @@ input{
 }
 .changelog{
     cursor: pointer;
-    width:330px ;
+    width:345px ;
     margin-top: 10px;
    
 }
-.changelog>div{
-    margin-bottom: 18px;
+#smldiv>div{
+    margin-bottom: 14px;
 }
 .changelog>:last-child{
     border: 3px solid white;
     border-left-color: #00ad85;
     overflow: scroll;
     height: 390px;
-    padding: 12px;
+    padding: 15px;
     text-align: left;
 }
 #smlbtn{
@@ -87,9 +87,22 @@ input{
     font-size: 10px;
     padding: 5px 15px;
 }
-#top{
+#text{
    font-size: 22px;
 }
 #sec{
     margin-top: 20px;
+}
+.c1{
+    font-size: 13px;
+    color: #a4a4a4;
+    margin-right: 12px;
+}
+.c2{
+    font-size: 13px;
+    margin-right: 10px;
+}
+.c3{
+    font-size: 14px;
+    color: #a4a4a4;
 }
