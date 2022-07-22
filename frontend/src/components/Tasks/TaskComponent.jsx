@@ -36,8 +36,8 @@ const TaskComponent = () => {
     dispatch(getTodosAPI());
   }, []);
 
-  if (getTodo.loading) return <h1>Loading...</h1>;
-  else if (getTodo.error) return <h1>Something went wrong</h1>;
+  if (getTodos.loading) return <h1>Loading...</h1>;
+  else if (getTodos.error) return <h1>Something went wrong</h1>;
   return (
     <div>
       <div>

@@ -1,12 +1,10 @@
 import "./App.css";
-import { Mainroute } from "./Routes/Mainroute";
-import TaskComponent from './components/Tasks/TaskComponent';
+import { AllRoutes } from "./Routes/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      <Mainroute />
-      <TaskComponent />
+      <AllRoutes />
     </div>
   );
 }
