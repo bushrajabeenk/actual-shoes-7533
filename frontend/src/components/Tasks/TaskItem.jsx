@@ -1,6 +1,6 @@
 import React from "react";
 
-const TaskItem = () => {
+const TaskItem = ({ setNewTodo }) => {
   return (
     <div>
       <input
@@ -10,6 +10,8 @@ const TaskItem = () => {
           height: "50px",
           border: "1px solid black",
         }}
+        type="text"
+        onChange={(e) => setNewTodo(e.target.value)}
       />
     </div>
   );
