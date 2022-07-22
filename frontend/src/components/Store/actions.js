@@ -55,7 +55,7 @@ export const updateTodoAPI = (payload) => (dispatch) => {
 export const deleteTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: DELETE_TODOS_LOADING });
   axios
-    .delete("")
+    .delete(`http://localhost:8080/todos/${payload.id}`)
     .then((r) => {
       dispatch({ type: DELETE_TODOS_SUCCESS, payload: r.data });
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
