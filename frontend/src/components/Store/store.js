@@ -1,4 +1,9 @@
-import { legacy_createStore as createStore } from "redux";
+import {
+  legacy_createStore as createStore,
+  applyMiddleware,
+  compose,
+  combineReducers,
+} from "redux";
 import thunk from "redux-thunk";
 import { todosReducer } from "./reducer";
 
