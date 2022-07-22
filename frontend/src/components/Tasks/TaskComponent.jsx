@@ -1,11 +1,11 @@
 import React from "react";
-import { useRef } from "react";
 import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getTodosAPI, postTodoAPI } from "../Store/actions";
 import TaskList from "./TaskList";
 
 const TaskComponent = () => {
-  // const [data, setData] = useState([]);
-  const ref = useRef();
+  const [newTodo, setNewTodo] = useState({});
 
   const dispatch = useDispatch();
 
@@ -13,23 +13,13 @@ const TaskComponent = () => {
     (state) => state.todo
   );
 
-  // const addTodo = (text) => {
-  // setData([
-  //   ...data,
-  //   {
-  //     id: data.length + 1,
-  //     text: text,
-  //   },
-  // ]);
-  const addTodo = () => {
-    let value = ref.current.value;
+  const addNew = () => {
     dispatch(
       postTodoAPI({
-        value: value,
+        title: newTodo,
         status: false,
       })
     );
-    ref.current.value = null;
   };
 
   useEffect(() => {
@@ -56,16 +46,12 @@ const TaskComponent = () => {
       </div>
       <div>
         <button>Add From Template</button>
-        <button
-          onClick={() => {
-            addTodo();
-          }}
-        >
+        <button disabled={postTodo.loading} onClick={addNew}>
           NEW TASK
         </button>
       </div>
       <div>
-        <TaskList data={data} />
+        <TaskList todos={todos} setNewTodo={setNewTodo} />
       </div>
     </div>
   );

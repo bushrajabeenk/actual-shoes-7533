@@ -1,11 +1,11 @@
 import React from "react";
 import TaskItem from "./TaskItem";
 
-const TaskList = ({ data }) => {
+const TaskList = ({ todos, setNewTodo }) => {
   return (
     <div>
-      {data.map((d) => {
-        return <TaskItem key={data.id} {...data} />;
+      {todos.map((d) => {
+        return <TaskItem key={d.id} {...d} setNewTodo={setNewTodo} />;
       })}
     </div>
   );
