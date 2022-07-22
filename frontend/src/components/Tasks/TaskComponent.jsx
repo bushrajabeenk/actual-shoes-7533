@@ -7,24 +7,12 @@ import TaskList from "./TaskList";
 
 const TaskComponent = () => {
   const [newTodo, setNewTodo] = useState({});
-  const ref = useRef();
 
   const dispatch = useDispatch();
 
   const { getTodos, postTodo, updateTodos, deleteTodo, todos } = useSelector(
     (state) => state.todo
   );
-
-  // const addTodo = (text) => {
-  //  let value = ref.current.value;
-  //  setData([
-  //   ...data,
-  //   {
-  //     id: data.length + 1,
-  //     text: text,
-  //   },
-  //  ref.current.value = null;
-  // ]);
 
   const addNew = () => {
     dispatch(
