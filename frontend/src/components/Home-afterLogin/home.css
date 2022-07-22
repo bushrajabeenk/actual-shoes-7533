@@ -3,7 +3,6 @@
  width: 13%;
 }
 #fst{
-    border: 1px solid blue;
     display: flex;
     justify-content: space-around;
 }
@@ -15,7 +14,12 @@
 }
 #secnd{
     cursor: pointer;
-    border: 1px solid red;
+    margin-top: -35px;
+}
+.psize>p{
+    font-size: 14px;
+    color: 
+    #a5a6a7;
 }
 a{
     color: black;
@@ -23,7 +27,36 @@ a{
     display: flex;
     gap: 12px;
     padding-left: 25px;
+    margin-bottom: 5px;
+}
+#secnd>div>a{
+   margin-bottom: -28px;
 }
 a>:last-child{
-    margin-top: 14px;
+    margin-top: 6px;
+}
+.icons{
+    color: 
+    #a5a6a7;
+}
+#secnd>div{
+    margin-bottom: 14px;
+   
+}
+#gift{
+    border: 1px solid
+    #00b29b;
+    color: 
+    #00b29b;
+    font-size: 11px;
+    padding: 9px;
+    border-radius: 3px;
+    margin-top: 28px;
+}
+.star{
+    font-size: 13px;
+}
+.last{
+    margin-top: 130px;
+    padding-right: 17px;
 }
