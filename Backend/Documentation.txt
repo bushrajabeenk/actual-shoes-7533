@@ -8,9 +8,7 @@ For Signin/Signup
     https://bonsai15.herokuapp.com/user/login
 
 3. for getting user profile by user id
-  https://bonsai15.herokuapp.com/profile/"userid"
-
-
+    https://bonsai15.herokuapp.com/profile/"userid"
 
 
 For Tasks and Templates
