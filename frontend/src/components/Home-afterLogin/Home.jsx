@@ -108,7 +108,84 @@ export const Home = () => {
        </div>
       </div>
       
-      
+      <div className='mainBox'>
+
+          <div className='goodMorningDiv'>
+            <div>
+            <img src="https://app.hellobonsai.com/packs/static/good-night-b72f77cf9b08b00ddf6b.svg" alt="" />
+            </div>
+            <div className='MorningBox'>
+              <p className='one1'>Saturday 23, July 2022</p>
+              <p  className='two2'>Good Morning, Name </p>
+            </div>
+          </div>
+
+          <div id='projectBox'>
+            <div className='leftBox paddingBox1 border'>
+              <div className='flexing'>
+                <div>1</div>
+                <div>Create your first Project</div>
+              </div>
+              <div class="vl"></div>
+              
+              <div className='flexing'>
+                <div>2</div>
+                <div>Add company details</div>
+              </div>
+              <div class="vl"></div>
+              
+              <div className='flexing'>
+                <div>3</div>
+                <div>Setup your branding</div>
+              </div>
+              <div class="vl"></div>
+              <div className='flexing'>
+                <div>4</div>
+                <div>Connect your calendar</div>
+              </div>
+              <div class="vl"></div>
+
+              <div className='flexing'>
+                <div>5</div>
+                <div>Connect a bank account</div>
+              </div>
+            </div>
+            <div className='rightBox paddingBox2 border '>
+              <div className='calenderBox'>
+              <AiOutlineCalendar/>
+              {/* Calender Box Logo line 158 */}
+              </div>
+              <p className='connect'>Connect your calendar</p>
+              <p className='connectDet'>Connect your Google Calendar account to receive automated reminders for upcoming invoices and tasks.</p>
+              <div className='buttonBox'>
+                <button className='buttnn1'>Connect Calender</button>
+                <button className='buttnn2'>Next Step</button>
+              </div>
+            </div>
+          </div>
+
+          <div id='projectBox'>
+           <div className='rightBox border'>
+            <h5 className='righth'>Project Timeline</h5>
+            <div className='cont'><p  className='NoCurrent '>No current activity in time frame</p></div>
+            </div>
+              <div className='leftBox'>
+                <div className='draftFlex'>
+                  <div><RiDraftLine/></div>
+                  <div>Draft a Proposal</div>
+                </div>
+                <div className='draftFlex'>
+                  <div><FaFileContract/></div>
+                  <div>Create a Contract</div>
+                </div>
+                <div className='draftFlex'>
+                  <div><FaFileInvoice/></div>
+                  <div>Send an Invoice</div>
+                </div>
+              </div>
+          </div>
+          
+      </div>
 
      </div>
 
