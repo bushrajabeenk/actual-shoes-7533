@@ -13,10 +13,10 @@ export const AllRoutes = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
+        {/* <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tasks" element={<TaskComponent />} />
-        <Route path="/introd" element={<Introd />} />
+        <Route path="/introd" element={<Introd />} /> */}
         {/* <Route path="/MainDropdown" element={<MainDropdown />} /> */}
       </Routes>
     </div>
