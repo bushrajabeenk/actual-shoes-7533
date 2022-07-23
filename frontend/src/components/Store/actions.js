@@ -12,7 +12,9 @@ import {
   DELETE_TODOS_LOADING,
   DELETE_TODOS_SUCCESS,
   DELETE_TODOS_ERROR,
-  TOGGLE_TODOS,
+  TOGGLE_TODO_LOADING,
+  TOGGLE_TODO_SUCCESS,
+  TOGGLE_TODO_ERROR,
 } from "./types";
 
 export const getTodosAPI = () => (dispatch) => {
@@ -21,19 +23,20 @@ export const getTodosAPI = () => (dispatch) => {
     .get("https://bonsai15.herokuapp.com/tasks")
     .then((r) => {
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
-      console.log(r.data[0]._id)
+      console.log(r.data[0]._id);
     })
     .catch(() => {
       dispatch({ type: GET_TODOS_ERROR });
     });
 };
 
-export const postTodoAPI = (payload) => (dispatch) => {
+export const postTodoAPI = (payload) => async (dispatch) => {
   dispatch({ type: POST_TODOS_LOADING });
-  axios
+  await axios
     .post("https://bonsai15.herokuapp.com/tasks", payload)
     .then((r) => {
       dispatch({ type: POST_TODOS_SUCCESS, payload: r.data });
+      console.log(payload);
       // dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
     })
     .catch(() => {
@@ -67,6 +70,15 @@ export const deleteTodoAPI = (payload) => (dispatch) => {
     });
 };
 
-// export const toggleTodoAPI = (payload) => (dispatch) => {
-//   axios
-// }
+export const toggleTodoAPI = (payload) => (dispatch) => {
+  dispatch({ type: TOGGLE_TODO_LOADING });
+  axios
+    .delete(`https://bonsai15.herokuapp.com/tasks/${payload.id}`)
+    .then((r) => {
+      dispatch({ type: TOGGLE_TODO_SUCCESS, payload: r.data });
+      // dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
+    })
+    .catch(() => {
+      dispatch({ type: TOGGLE_TODO_ERROR });
+    });
+};

@@ -5,7 +5,7 @@ const TaskList = ({ data, setNewTodo }) => {
   return (
     <div>
       {data.map((d) => {
-        return <TaskItem key={d.id} {...d} setNewTodo={setNewTodo} />;
+        return <TaskItem key={d._id} {...d} setNewTodo={setNewTodo} />;
       })}
     </div>
   );

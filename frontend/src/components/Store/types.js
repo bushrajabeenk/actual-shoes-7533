@@ -14,4 +14,6 @@ export const DELETE_TODOS_LOADING = "delete/loading";
 export const DELETE_TODOS_SUCCESS = "delete/success";
 export const DELETE_TODOS_ERROR = "delete/failure";
 
-export const TOGGLE_TODOS = "toggle";
+export const TOGGLE_TODO_LOADING = "toggle/loading";
+export const TOGGLE_TODO_SUCCESS = "toggle/success";
+export const TOGGLE_TODO_ERROR = "toggle/failure";

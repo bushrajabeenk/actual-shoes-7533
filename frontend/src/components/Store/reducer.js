@@ -11,7 +11,9 @@ import {
   DELETE_TODOS_LOADING,
   DELETE_TODOS_SUCCESS,
   DELETE_TODOS_ERROR,
-  TOGGLE_TODOS,
+  TOGGLE_TODO_LOADING,
+  TOGGLE_TODO_SUCCESS,
+  TOGGLE_TODO_ERROR,
 } from "./types";
 
 const initState = {
@@ -31,6 +33,11 @@ const initState = {
     error: false,
   },
   deleteTodo: {
+    loading: false,
+    success: false,
+    error: false,
+  },
+  toggleTodo: {
     loading: false,
     success: false,
     error: false,
@@ -98,7 +105,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
           success: true,
           error: false,
         },
-        todos: [...state.todos, payload || ""],
+        todos: [...state.todos, payload],
       };
     }
 
@@ -190,17 +197,52 @@ export const todosReducer = (state = initState, { type, payload }) => {
       };
     }
 
-    case TOGGLE_TODOS: {
-      state.todos.map((items) => {
-        if (items.id === payload.id) {
-          items.status = !items.status;
-        }
-      });
+    case TOGGLE_TODO_LOADING: {
       return {
         ...state,
-        todos: [...state.todos],
+        toggleTodo: {
+          loading: true,
+          success: false,
+          error: false,
+        },
       };
     }
+
+    case TOGGLE_TODO_SUCCESS:
+      let newToggledTodos = state.todos.map((item) =>
+        item.id === payload.id ? payload : item
+      );
+      return {
+        ...state,
+        toggleTodo: {
+          loading: false,
+          success: true,
+          error: false,
+        },
+        todos: newToggledTodos,
+      };
+
+    case TOGGLE_TODO_ERROR:
+      return {
+        ...state,
+        toggleTodo: {
+          loading: false,
+          success: false,
+          error: true,
+        },
+      };
+
+    // case TOGGLE_TODOS: {
+    //   state.todos.map((items) => {
+    //     if (items.id === payload.id) {
+    //       items.status = !items.status;
+    //     }
+    //   });
+    //   return {
+    //     ...state,
+    //     todos: [...state.todos],
+    //   };
+    // }
 
     default: {
       return state;
