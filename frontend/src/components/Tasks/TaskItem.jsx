@@ -8,6 +8,7 @@ const TaskItem = ({ d, setNewTodo }) => {
   const { deleteTodo } = useSelector((state) => state.todo);
 
   const handleDelete = () => {
+    console.log(d)
     dispatch(deleteTodoAPI(d.id));
   };
 

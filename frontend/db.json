@@ -1,14 +1,3 @@
 {
-  "tasks": [
-    {
-      "title": {},
-      "status": false,
-      "id": 1
-    },
-    {
-      "title": {},
-      "status": false,
-      "id": 2
-    }
-  ]
+  "tasks": []
 }

@@ -18,9 +18,10 @@ import {
 export const getTodosAPI = () => (dispatch) => {
   dispatch({ type: GET_TODOS_LOADING });
   return axios
-    .get("http://localhost:8080/tasks")
+    .get("https://bonsai15.herokuapp.com/tasks")
     .then((r) => {
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
+      console.log(r.data[0]._id)
     })
     .catch(() => {
       dispatch({ type: GET_TODOS_ERROR });
@@ -30,7 +31,7 @@ export const getTodosAPI = () => (dispatch) => {
 export const postTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: POST_TODOS_LOADING });
   axios
-    .post("http://localhost:8080/tasks", payload)
+    .post("https://bonsai15.herokuapp.com/tasks", payload)
     .then((r) => {
       dispatch({ type: POST_TODOS_SUCCESS, payload: r.data });
       // dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
@@ -43,7 +44,7 @@ export const postTodoAPI = (payload) => (dispatch) => {
 export const updateTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: UPDATE_TODOS_LOADING });
   axios
-    .put(`http://localhost:8080/tasks/${payload.id}`, payload)
+    .put(`https://bonsai15.herokuapp.com/tasks/${payload.id}`, payload)
     .then((r) => {
       dispatch({ type: UPDATE_TODOS_SUCCESS, payload: r.data });
       dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
@@ -56,10 +57,10 @@ export const updateTodoAPI = (payload) => (dispatch) => {
 export const deleteTodoAPI = (payload) => (dispatch) => {
   dispatch({ type: DELETE_TODOS_LOADING });
   axios
-    .delete(`http://localhost:8080/tasks/${payload.id}`)
+    .delete(`https://bonsai15.herokuapp.com/tasks/${payload.id}`)
     .then((r) => {
       dispatch({ type: DELETE_TODOS_SUCCESS, payload: r.data });
-      dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
+      // dispatch({ type: GET_TODOS_SUCCESS, payload: r.data });
     })
     .catch((err) => {
       dispatch({ type: DELETE_TODOS_ERROR, payload: err });

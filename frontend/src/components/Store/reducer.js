@@ -192,7 +192,7 @@ export const todosReducer = (state = initState, { type, payload }) => {
 
     case TOGGLE_TODOS: {
       state.todos.map((items) => {
-        if (items.id === payload) {
+        if (items.id === payload.id) {
           items.status = !items.status;
         }
       });

@@ -5,19 +5,22 @@ import { getTodosAPI, postTodoAPI } from "../Store/actions";
 import TaskList from "./TaskList";
 
 const TaskComponent = () => {
-  const [newTodo, setNewTodo] = useState({});
+  const [newTodo, setNewTodo] = useState("");
 
   const dispatch = useDispatch();
 
-  const { getTodos, postTodo, updateTodos, deleteTodo, todos: data } = useSelector(
-    (state) => state.todo
-  );
+  const {
+    getTodos,
+    postTodo,
+    updateTodos,
+    deleteTodo,
+    todos: data,
+  } = useSelector((state) => state.todo);
 
   const addNew = () => {
     dispatch(
       postTodoAPI({
         title: newTodo,
-        status: false,
       })
     );
   };
