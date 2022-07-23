@@ -2,6 +2,7 @@ import React from 'react'
 import "./Introd.css"
 import MainDropdown from '../Dropdown/mainDropdown/MainDropdown';
 import Footer from '../footer/Footer';
+import MiddleComp from '../belowDropdown/middleComp/MiddleComp';
 const Introd = () => {
   return (
     <>
@@ -51,6 +52,8 @@ const Introd = () => {
 
     </div>
     <MainDropdown />
+    <MiddleComp />
+  
       {/* <Footer /> */}
     </>
   )

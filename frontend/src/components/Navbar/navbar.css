@@ -1,17 +1,23 @@
+.leftIconDiv {
+  margin-left: 8%;
+}
+.rightDivNavbar {
+  margin-right: 15%;
+  display: flex;
+}
+.rightDivNavbar div {
+  padding: 10px;
+  /* padding-left: 10px; */
+}
+.middleDivStyle {
+  font-size: large;
+  margin-left: 10%;
+  /* width: 100%; */
+}
 
-.leftIconDiv{
-    margin-left: 8%;
+.HomeBox {
+    width:100%;
 }
-.rightDivNavbar{
-   
-    margin-right: 15%;
-    display: flex;
-}
-.rightDivNavbar div{
-    padding: 10px;
-    /* padding-left: 10px; */
-}
-.middleDivStyle{
-    font-size: large;
-    margin-left: 10%;
+.templateDropdown{
+    border: 1px solid white;
 }
