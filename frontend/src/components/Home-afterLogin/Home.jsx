@@ -7,16 +7,20 @@ import {GrDocumentText} from 'react-icons/gr'
 import {IoNewspaperOutline} from 'react-icons/io5'
 import {TbFileDollar} from 'react-icons/tb'
 import {MdOutlineWatchLater} from 'react-icons/md'
-import {BiTask} from 'react-icons/bi'
-import {BsWallet} from 'react-icons/bs'
+import {BiTask,BiGift,BiSearchAlt2} from 'react-icons/bi'
+import {BsWallet,BsLaptop,BsPlayCircle} from 'react-icons/bs'
 import {TbReceiptTax} from 'react-icons/tb'
 import {ImFileText2} from 'react-icons/im'
-import {BiGift} from 'react-icons/bi'
-import {AiOutlineStar} from 'react-icons/ai'
+import {AiOutlineStar,AiOutlineChrome,AiOutlineCalendar} from 'react-icons/ai'
 import {FaCrown} from 'react-icons/fa'
-import {BsPlayCircle} from 'react-icons/bs'
+import { RiDraftLine } from "react-icons/ri";
+import { FaFileContract,FaFileInvoice } from "react-icons/fa";
+import {GiSmartphone} from 'react-icons/gi'
 
 export const Home = () => {
+
+
+
   return (
     <div id='home'>
       {/* sidebar */}
@@ -90,6 +94,7 @@ export const Home = () => {
       <div id='rightmain'>
        <div id='top'>
        <div>
+       <span ><BiSearchAlt2 id='searchIcon'/></span>
         <input type='text' placeholder='Search'/>
         </div>
         <div className='crown'>
@@ -102,8 +107,14 @@ export const Home = () => {
           <div>Start Timer</div>
        </div>
       </div>
-      <div></div>
-      </div>
-    </div>
+      
+      
+
+     </div>
+
+   </div>
   )
 }
+
+
+ 
