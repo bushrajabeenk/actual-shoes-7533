@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Introd.css"
+import MainDropdown from '../Dropdown/mainDropdown/MainDropdown';
 
 const Introd = () => {
   return (
@@ -49,7 +50,7 @@ const Introd = () => {
       </div>
 
     </div>
-    
+    <MainDropdown />
     </>
   )
 }
