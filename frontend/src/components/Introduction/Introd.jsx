@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Introd.css"
 import MainDropdown from '../Dropdown/mainDropdown/MainDropdown';
-
+import Footer from '../footer/Footer';
 const Introd = () => {
   return (
     <>
@@ -51,6 +51,7 @@ const Introd = () => {
 
     </div>
     <MainDropdown />
+      {/* <Footer /> */}
     </>
   )
 }

@@ -12,8 +12,7 @@ export const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tasks" element={<TaskComponent />} />
