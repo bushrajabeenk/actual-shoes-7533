@@ -72,6 +72,7 @@ a>:last-child{
 }
 #rightmain{
     flex: 6;
+    padding-bottom: 30px 
 }
 #top{
     height: 72px;
