@@ -1,0 +1,17 @@
+
+.leftIconDiv{
+    margin-left: 8%;
+}
+.rightDivNavbar{
+   
+    margin-right: 15%;
+    display: flex;
+}
+.rightDivNavbar div{
+    padding: 10px;
+    /* padding-left: 10px; */
+}
+.middleDivStyle{
+    font-size: large;
+    margin-left: 10%;
+}
