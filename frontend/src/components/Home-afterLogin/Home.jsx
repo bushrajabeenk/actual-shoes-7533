@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./home.css";
 import { FiHome } from "react-icons/fi";
 import { BsPlusSquare } from "react-icons/bs";
 
