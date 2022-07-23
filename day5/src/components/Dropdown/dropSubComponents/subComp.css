@@ -1,0 +1,12 @@
+
+.upperDivSub{
+    /* border: 1px solid black; */
+    margin-top: 8%;
+    padding-top: 8%;
+}
+.upperDivSub a {
+    text-decoration: none;
+}
+.lowerDivSub{
+    padding-left: 15% ;
+}
