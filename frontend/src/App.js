@@ -9,8 +9,9 @@ function App() {
   return (
     <div className="App">
       {/* <Navbar /> */}
-      {/* <AllRoutes /> */}
-      <Home/>
+      <AllRoutes />
+      {/* <Home/> */}
+      {/* <New /> */}
       {/* <Sidebar/> */}
       {/* <TaskComponent /> */}
     </div>
