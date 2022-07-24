@@ -1,19 +1,20 @@
 import "./App.css";
-import TaskComponent from "./components/Tasks/TaskComponent";
+// import TaskComponent from "./components/Tasks/TaskComponent";
 import { AllRoutes } from "./Routes/AllRoutes";
 import Navbar from "./components/Navbar/Navbar";
-import { Home } from "./components/Home-afterLogin/Home";
-// import { Sidebar } from "./components/Home-afterLogin/Sidebar";
+// import Footer from './components/footer/Footer';
+import {Login } from './components/Login/Login';
+import {Signup} from './components/Signup/Signup';
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
-      <AllRoutes />
-      {/* <Home/> */}
-      {/* <New /> */}
-      {/* <Sidebar/> */}
-      {/* <TaskComponent /> */}
+      <Navbar />
+      {/* //  <AllRoutes />  */}
+      {/* <Login /> */}
+      {/* <Signup /> */}
+       {/* <Footer /> */}
+       {/* <TaskComponent /> */}
     </div>
   );
 }

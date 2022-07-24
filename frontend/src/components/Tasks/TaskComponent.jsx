@@ -12,6 +12,7 @@ const TaskComponent = () => {
   const { getTodos, postTodo, updateTodos, deleteTodo, todos } = useSelector(
     (state) => state.todo
   );
+
   console.log(todos, "Todos");
 
   const addNew = () => {

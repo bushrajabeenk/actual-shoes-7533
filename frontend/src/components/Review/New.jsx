@@ -1,12 +1,12 @@
 import React from "react";
-import data from "../data.json";
+import data from './data.json';
 import styles from "./New.module.css";
 const New = () => {
-  console.log(data);
+  // console.log(data);
 
   return (
     <>
-      <div style={{ backgroundColor: "#f3f3f7" }}>
+      <div style={{ backgroundColor: "#f3f3f7", width:"98%"}}>
         <div className={styles.heading}>
           <div className={styles.heading1}>Bonsai Reviews</div>
           <div className={styles.heading2}>
