@@ -34,7 +34,7 @@ const TaskComponent = () => {
     <div>
       <div
         style={{
-          marginTop: "180px",
+          marginTop: "70px",
           width: "80%",
           marginLeft: "140px",
           borderRadius: "3px",
