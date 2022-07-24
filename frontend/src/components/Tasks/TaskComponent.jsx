@@ -5,7 +5,7 @@ import { getTodosAPI, postTodoAPI } from "../Store/actions";
 import TaskList from "./TaskList";
 
 const TaskComponent = () => {
-  const [newTodo, setNewTodo] = useState({});
+  const [newTodo, setNewTodo] = useState("");
 
   const dispatch = useDispatch();
 
@@ -19,7 +19,6 @@ const TaskComponent = () => {
     dispatch(
       postTodoAPI({
         title: newTodo,
-        status: false,
       })
     );
   };

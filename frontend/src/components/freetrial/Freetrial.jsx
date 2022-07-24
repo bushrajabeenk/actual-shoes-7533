@@ -130,7 +130,7 @@ const Freetrial = () => {
             <button onClick={handleback} className={styles.crossbutton}>
               <img
                 className={styles.crossbuttonimg}
-                src="cross.PNG"
+                src={process.env.PUBLIC_URL + "/cross.png"}
                 alt="cross"
               />
             </button>
@@ -154,13 +154,13 @@ const Freetrial = () => {
             <div className={styles.part302}>
               <div className={styles.part35}>
                 <div>
-                  <img src="star.PNG" alt="star" />
+                  <img src={process.env.PUBLIC_URL + "/star.png"} alt="star" />
                 </div>
                 <div style={{ marginLeft: 8 }}>Cancel at any time</div>
               </div>
               <div className={styles.part35}>
                 <div>
-                  <img src="star.PNG" alt="star" />
+                  <img src={process.env.PUBLIC_URL + "/star.png"} alt="star" />
                 </div>
                 <div style={{ marginLeft: 8 }}>30 day money-back guarantee</div>
               </div>
@@ -169,8 +169,8 @@ const Freetrial = () => {
               <div className={styles.extra1}>
                 <img
                   style={{ position: "absolute", marginTop: 7 }}
-                  src="user.PNG"
-                  alt="star"
+                  src={process.env.PUBLIC_URL + "/user.png"}
+                  alt="user"
                 />
                 <input
                   style={{ marginLeft: 25 }}
@@ -183,8 +183,8 @@ const Freetrial = () => {
             <div className={styles.extra1}>
               <img
                 style={{ position: "absolute", marginTop: 6 }}
-                src="card.PNG"
-                alt="star"
+                src={process.env.PUBLIC_URL + "/card.png"}
+                alt="card"
               />
               <input
                 className={styles.card}
@@ -215,7 +215,7 @@ const Freetrial = () => {
             <button className={styles.cardbutton}> Start Free Trial</button>
             <div className={styles.last}>
               <div>
-                <img src="lock.PNG" alt="lock" />
+                <img src={process.env.PUBLIC_URL + "/lock.png"} alt="lock" />
               </div>
               <div style={{ marginTop: 2 }}>
                 Guaranteed safe & secure payments

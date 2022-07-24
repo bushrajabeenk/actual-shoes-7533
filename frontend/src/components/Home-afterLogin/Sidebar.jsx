@@ -141,7 +141,7 @@ export const Sidebar = () => {
               </h3>
             </div>
             <div className="psize">
-              <p>cash</p>
+            <Link to="Freetrial">cash</Link>
             </div>
           </a>
           <a href="/accounting">
@@ -151,7 +151,7 @@ export const Sidebar = () => {
               </h3>
             </div>
             <div className="psize">
-              <p>Accounting</p>
+            <Link to="Freetrial">Accounting</Link>
             </div>
           </a>
           <a href="/taxes">
@@ -161,7 +161,8 @@ export const Sidebar = () => {
               </h3>
             </div>
             <div className="psize">
-              <p>Taxes</p>
+            <Link to="Freetrial">Taxes</Link>
+    
             </div>
           </a>
         </div>

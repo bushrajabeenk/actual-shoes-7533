@@ -1,6 +1,6 @@
 import "./home.css";
 import { BsLaptop } from "react-icons/bs";
-import {AiOutlineChrome,AiOutlineCalendar,} from "react-icons/ai";
+import { AiOutlineChrome, AiOutlineCalendar } from "react-icons/ai";
 import { RiDraftLine } from "react-icons/ri";
 import { FaFileContract, FaFileInvoice } from "react-icons/fa";
 import { GiSmartphone } from "react-icons/gi";
@@ -11,12 +11,12 @@ export const Home = () => {
   return (
     <div id="home">
       {/* sidebar */}
-      <Sidebar/>
+      <Sidebar />
 
       {/* navbar */}
 
       <div id="rightmain">
-        <HomeNav/>
+        <HomeNav />
         <div className="mainBox">
           <div className="goodMorningDiv">
             <div>
