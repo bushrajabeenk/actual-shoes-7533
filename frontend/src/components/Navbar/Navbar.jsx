@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,11 +9,11 @@ const Navbar = () => {
         <div className="container-fluid">
           <div className="leftIconDiv">
             <a className="navbar-brand ms-5 " to="/">
-            <Link to="/">
-              <img
-                src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
-                alt=""
-              />
+              <Link to="/">
+                <img
+                  src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
+                  alt=""
+                />
               </Link>
             </a>
           </div>
@@ -35,10 +35,9 @@ const Navbar = () => {
               </a>
               <ul
                 className="dropdown-menu HomeBox"
-               
                 aria-labelledby="navbarDropdown"
               >
-                <li  >
+                <li>
                   <a className="dropdown-item p-1">
                     <h5>Bonsai Workflow</h5>
                     <p>
@@ -60,9 +59,13 @@ const Navbar = () => {
                   <a className="dropdown-item p-3">
                     <h5>Bonsai Tax</h5>
                     <p>
-                      Track expenses<br/>, maximize taxs<br/> writeoffs
+                      Track expenses
+                      <br />, maximize taxs
+                      <br /> writeoffs
                       <br />
-                      and estimate <br/>taxes without<br/> headache.
+                      and estimate <br />
+                      taxes without
+                      <br /> headache.
                     </p>
                   </a>
                 </li>
@@ -71,9 +74,13 @@ const Navbar = () => {
                   <a className="dropdown-item p-3">
                     <h5>Bonsai Cash</h5>
                     <p>
-                      Bonsai's is<br/> all-in-one<br/> financial hub:
+                      Bonsai's is
+                      <br /> all-in-one
+                      <br /> financial hub:
                       <br />
-                      no fess<br/> lightning fast<br/> payouts
+                      no fess
+                      <br /> lightning fast
+                      <br /> payouts
                     </p>
                   </a>
                 </li>
@@ -91,8 +98,11 @@ const Navbar = () => {
               >
                 Templates
               </a>
-              <ul className="dropdown-menu templateDropdown" aria-labelledby="navbarDropdown2">
-                <li >
+              <ul
+                className="dropdown-menu templateDropdown"
+                aria-labelledby="navbarDropdown2"
+              >
+                <li>
                   <a className="dropdown-item p-3 " to="/stays">
                     <img
                       src="https://static.thenounproject.com/png/1021192-200.png"
@@ -183,12 +193,16 @@ const Navbar = () => {
               >
                 <li className="nav-item p-2   ">
                   {/* <a className="nav-link  " href="#"> */}
-                  <Link  to="/price"><span className="nav-link  ">Pricing</span></Link> 
+                  <Link to="/price">
+                    <span className="nav-link  ">Pricing</span>
+                  </Link>
                   {/* </a> */}
                 </li>
                 <li className="nav-item p-2 ">
                   {/* <a className="nav-link  " href="#"> */}
-                  <Link  to="/review"><span className="nav-link  ">Reviews</span></Link> 
+                  <Link to="/review">
+                    <span className="nav-link  ">Reviews</span>
+                  </Link>
                   {/* </a> */}
                 </li>
               </ul>
@@ -197,9 +211,11 @@ const Navbar = () => {
 
           <div className="rightDivNavbar">
             <div>
-              <button type="button" class="btn btn-outline-primary ">
+              {/* <button type="button"> */}
+              <Link to="/login" class="btn btn-outline-primary">
                 Login
-              </button>
+              </Link>
+              {/* </button> */}
             </div>
             <div style={{ marginLeft: "20px" }}>
               {" "}

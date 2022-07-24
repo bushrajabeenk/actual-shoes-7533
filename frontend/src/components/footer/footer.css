@@ -1,9 +1,15 @@
-.footerContainer{
-    display: flex;
-    height: auto;
-    width : 100% ;
-    padding-left: 6%;
-    padding-bottom: 4%;
-    /* border: 1px solid black; */
-    justify-content: space-around;
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Proximanova opt", sans-serif;
+}
+.fChildContainer > p {
+  font-size: 16px;
+  margin-bottom: 7px;
+  color: #a4a4ae;
+}
+.fChildContainer > h6 {
+  margin-bottom: 50px;
+  color: black;
+  font-family: "Proximanova opt", sans-serif;
 }

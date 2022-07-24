@@ -1,11 +1,15 @@
 import React from "react";
 import data from './data.json';
 import styles from "./New.module.css";
+import Navbar from '../Navbar/Navbar';
+import Footer from '../footer/Footer';
+
 const New = () => {
   // console.log(data);
 
   return (
     <>
+    <Navbar />
       <div style={{ backgroundColor: "#f3f3f7", width:"98%"}}>
         <div className={styles.heading}>
           <div className={styles.heading1}>Bonsai Reviews</div>
@@ -84,6 +88,7 @@ const New = () => {
           })}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

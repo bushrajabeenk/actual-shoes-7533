@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Price.module.css";
+import Navbar from '../Navbar/Navbar';
+import Footer from '../footer/Footer';
+
 const Price = () => {
   const navigate = useNavigate();
   const handleḷogin = () => {
@@ -8,6 +11,7 @@ const Price = () => {
   };
   return (
     <>
+    <Navbar />
       <div className={styles.part1}>
         <div className={styles.part12}>Plans & Pricing</div>
         <div className={styles.part13}>
@@ -356,6 +360,7 @@ const Price = () => {
         </div>
         <div className={styles.part51}>What is your refund policy?</div>
       </div>
+      <Footer />
     </>
   );
 };

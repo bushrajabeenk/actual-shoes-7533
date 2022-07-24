@@ -8,7 +8,8 @@ import Introd from '../components/Introduction/Introd';
 import Navbar from '../components/Navbar/Navbar';
 import Price from "../components/price/Price";
 import New from '../components/Review/New';
-
+import Freetrial from "../components/freetrial/Freetrial";
+import {Tasks} from '../components/Tasks/Tasks';
 export const AllRoutes = () => {
   return (
     <div>
@@ -19,7 +20,8 @@ export const AllRoutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/price" element={<Price />} />
         <Route path="/review" element={<New />} />
-        <Route path="/tasks" element={<TaskComponent />} />
+        <Route path="/home/Freetrial" element={<Freetrial />} />
+        <Route path="/home/tasks" element={<Tasks />} />
       </Routes>
     </div>
   );

@@ -4,10 +4,12 @@ import MainDropdown from '../Dropdown/mainDropdown/MainDropdown';
 import Footer from '../footer/Footer';
 import MiddleComp from '../belowDropdown/middleComp/MiddleComp';
 import ReviewPage from '../belowDropdown/ReviewPage/ReviewPage';
+import Navbar from '../Navbar/Navbar';
 
 const Introd = () => {
   return (
     <>
+    <Navbar />
     <div className='mainContainer'>
             <div className='leftDivFinancial'>
                 <div>
@@ -56,7 +58,7 @@ const Introd = () => {
     <MainDropdown />
     <MiddleComp />
     <ReviewPage />
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }

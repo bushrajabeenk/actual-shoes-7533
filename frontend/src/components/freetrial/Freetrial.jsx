@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Freetrial.module.css";
+
 const Freetrial = () => {
   const navigate = useNavigate();
   const handleback = () => {

@@ -1,88 +1,50 @@
-import React from 'react'
-import "./footer.css"
+import React from "react";
+import "./footer.css";
 
 const Footer = () => {
-
   return (
     <>
-
-       <div className='footerContainer'>
-            <div className='footerFlexCol'>
-              <b>PRODUCT</b>
-              <br/>
-              <br/>
-                 <ul className="nav flex-column" style={{fontSize : "15px"}}>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Proposals</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Contracts</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Invoicing</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Client CRM</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Task Tracking</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Forms</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Accounting</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Bonsai Tax</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Bonsai Cash</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-                        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Bonsai Reviews</a></li>
-                  </ul>
-            </div>
-            <div className='footerFlexCol'>
-              <b>FREE RESOURCES</b>
-              <br/>
-              <br/>
-              <ul className="nav flex-column" style={{fontSize : "15px"}}>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Freelance Resources</a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Freelance Blog by Bonsai</a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">How to Write a Contract</a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Online Signature Maker</a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Self-Employed Taxes Hub</a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Self-Employed Tax Calculator</a></li>
-                    <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Self-Employed Tax Deductions</a></li>
-                </ul>
-                <br/>
-                <br/>
-                <div className='footerFlexCol'>
-              <b>TEMPLATE</b>
-              <br/>
-              <br/>
-              
-              <ul className="nav flex-column" style={{fontSize : "15px"}}>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Invoice Templates</a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Proposal Templates</a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Contract Templates</a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Agreement Templates</a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Scope of Work Templates</a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Quote Templates </a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted"> Credit Note Templates</a></li>
-                      <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Estimate Templates</a></li>
-               </ul>
-                
-            </div>
-            </div>
-
-            
-            <div className='footerFlexCol'>
-              <b>BONSAI</b>
-              <br/>
-              <br/>
-              
-              <ul className="nav flex-column" style={{fontSize : "15px"}}>
-                         <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Careers</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Support</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">LinkedIn</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Twitter</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Privacy policy</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Legal</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Affiliates</a></li>
-                          <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Write for Us</a></li>
-               </ul>
-                
-            </div>
-       </div>
-
-
+      <div className="footerContainer">
+        <div className="fChildContainer">
+          <h6>PRODUCT</h6>
+          <p> Proposals</p>
+          <p> Contracts</p>
+          <p> Invoicing</p>
+          <p> Client CRM</p>
+          <p> Time Tracking</p>
+          <p> Task Tracking</p>
+          <p> Forms</p>
+          <p> Accounting</p>
+          <p> Bonsai Tax</p>
+          <p> Bonsai Cash</p>
+          <p> Pricing</p>
+          <p>Bonsai Reviews</p>
+        </div>
+        <div className="fChildContainer">
+          <h6>FREE RESOURCES</h6>
+          <p>Freelance Resources</p>
+          <p>Freelance Blog by Bonsai</p>
+          <p>How to Write a Contract</p>
+          <p>Online Signature Maker</p>
+          <p>Self-Employed Taxes Hub</p>
+          <p>Self-Employed Tax Calculator</p>
+          <p>Self-Employed Tax Deductions</p>
+        </div>
+        <div className="fChildContainer">
+          <h6>BONSAI</h6>
+          <p>About</p>
+          <p>Careers</p>
+          <p>Support</p>
+          <p>LinkedIn</p>
+          <p>Twitter</p>
+          <p>Privacy policy</p>
+          <p>Legal</p>
+          <p>Affiliates</p>
+          <p>Write for Us</p>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

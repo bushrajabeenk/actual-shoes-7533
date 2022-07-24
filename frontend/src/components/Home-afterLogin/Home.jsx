@@ -26,7 +26,7 @@ export const Home = () => {
               />
             </div>
             <div className="MorningBox">
-              <p className="one1">Saturday 23, July 2022</p>
+              <p className="one1">Sunday 24, July 2022</p>
               <p className="two2">Good Morning, Saraswati </p>
             </div>
           </div>
