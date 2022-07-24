@@ -13,7 +13,7 @@
     /* padding: 10%; */
     width: 30.4%;
     margin: auto;
-    box-shadow: 5px 10px 8px 10px #888888;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .leftDivDropdown div{
     padding: 7%;

@@ -18,7 +18,7 @@ export const Signup = () => {
   };
   const handelLogin = async () => {
     const { data } = await axios.post(
-      "http://localhost:8080/user/signup",
+      "https://bonsai15.herokuapp.com/user/Signup",
       formData
     );
     console.log(data);
