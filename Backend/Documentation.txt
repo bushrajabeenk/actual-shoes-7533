@@ -1,0 +1,38 @@
+Api url--> https://bonsai15.herokuapp.com
+
+For Signin/Signup
+1. for Signup (storing users data)
+    https://bonsai15.herokuapp.com/user/Signup
+
+2. for login 
+    https://bonsai15.herokuapp.com/user/login
+
+3. for getting user profile by user id
+    https://bonsai15.herokuapp.com/profile/"userid"
+
+
+For Tasks and Templates
+
+1. for storing and getting tasks-
+  https://bonsai15.herokuapp.com/tasks
+
+  1.1 for getting tasks by status
+  https://bonsai15.herokuapp.com/tasks/"taskid"
+
+  1.2 for updating task by task id
+  https://bonsai15.herokuapp.com/tasks/"taskid"
+
+  1.3 for deleting task by task id
+  https://bonsai15.herokuapp.com/tasks/"taskid"
+
+2. for storing and getting template tasks-
+  https://bonsai15.herokuapp.com/templatetasks
+
+  2.1 for updating task by template id
+  https://bonsai15.herokuapp.com/templatetasks/"templateid"
+
+  2.2 for deleting task by template id
+  https://bonsai15.herokuapp.com/templatetasks/"tempalteid"
+
+  2.3 for getting specific template by template id
+  https://bonsai15.herokuapp.com/templatetasks/"tempalteid"

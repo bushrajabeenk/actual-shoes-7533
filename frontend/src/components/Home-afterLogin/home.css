@@ -1,0 +1,397 @@
+#sidebar{
+    border: 1.5px solid #c5c5c5;
+    /* flex: 1; */
+    height: 100%;
+    width: 14%;
+    position: fixed;
+   }
+   #fst{
+       display: flex;
+       justify-content: space-around;
+   }
+   #fst>:first-child{
+       margin-top: 16px;
+   }
+   .dsgn{
+       color:  #73d3bd;
+   }
+   #secnd{
+       cursor: pointer;
+       /* margin-top: -35px; */
+   }
+   .psize>p{
+       font-size: 14px;
+       color: 
+       #a5a6a7;
+   }
+   a{
+       color: black;
+       text-decoration: none;
+       display: flex;
+       gap: 12px;
+       padding-left: 25px;
+       margin-bottom: -10px;
+   }
+   a>:last-child{
+       margin-top: 6px;
+   }
+   .icons{
+       color: 
+       #a5a6a7;
+   }
+   #secnd>div{
+       margin-bottom: 14px;
+      
+   }
+   #gift{
+       border: 1px solid
+       #00b29b;
+       color: 
+       #00b29b;
+       font-size: 11px;
+       padding: 9px;
+       border-radius: 3px;
+       margin-top: 28px;
+   }
+   .star{
+       font-size: 13px;
+   }
+   .last{
+       margin-top: 130px;
+       padding-right: 17px;
+   }
+   .searchLogo{
+       border: 1px solid black;
+       /* padding-left: 80px; */
+   }
+   #home{
+       display: flex;
+   }
+   #rightmain{
+       flex: 6;
+       padding-bottom: 30px 
+   }
+   #top{
+       height: 72px;
+       display: flex;
+       border: 1px solid #c5c5c5;
+       justify-content: space-between;
+       padding: 10px 20px 0px 20px;
+       align-items: center;
+       width: 82%;
+       margin-left: 14.5%;
+   }
+   .crown{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .b1{
+       font-size: 11px;
+       padding: 10px 25px 10px 18px;
+       color: white;
+       background-color: 
+       #00b087;
+       border: none;
+       border-radius: 3px;
+       margin-right: 8px;
+   }
+   .b2{
+       color: #00b289;
+       border: none;
+       cursor: pointer;
+       background-color: transparent;
+   }
+   .play{
+       font-size: 25px;
+   }
+   
+   .crown>div:last-child{
+       margin-bottom: 7px;
+   }
+   #top>div>input {
+       width: 300px;
+       height: 30px;
+       padding-left: 35px;
+       border: none;
+       
+   }
+   
+   #searchIcon{
+       font-size:26px;
+       /* border: 1px solid black; */
+       position: relative;
+       top: 10px;
+       left: 30px;
+   }
+   .mainBox{
+       /* border: 1px solid black; */
+       padding: 15px;
+       width: 95%;
+       margin: auto;
+       margin-top: 50px;
+       width: 80%;
+       margin-left: 17%;
+   }
+   .goodMorningDiv{
+       border-bottom: 1px solid #d8d9d9;
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       display: flex;
+   }
+   .MorningBox{
+      text-align: left;
+      margin-left: 9px;
+   }
+   .one1{
+       color: 
+       #9c877e;
+       font-size: 18px;
+       margin: 5px;
+   }
+   .two2{
+       font-size: 30px;
+       font-family: serif;
+       margin: 5px;
+   }
+   #projectBox{
+       margin-top: 50px;
+       display: flex;
+       border-radius: 5px;
+   }
+   .paddingBox1{
+       padding: 40px;
+   }
+   .paddingBox2{
+       padding: 50px;
+   }
+   .border{
+       /* border: 1px solid rgb(0, 210, 161); */
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+   }
+   .leftBox{
+       flex: 1;
+   }
+   .rightBox{
+       flex: 2.5;
+   }
+   .righth5{
+       margin-left: 20px;
+      text-align: left;
+      color: 
+      #405b70;
+   }
+   .flexing{
+       display: flex;
+       margin-top: 20px;
+       margin: 0px;
+   }
+   .flexing > div:nth-child(1){
+       flex: .5;
+       height: 28px;
+       border: 1px solid rgb(0,174,134);
+       border-radius: 55%;
+       margin-right: 20px;
+       text-align: center;
+       padding-top: 2px;
+   }
+   .flexing > div:nth-child(2){
+       flex: 4;
+       border: 1px solid rgb(0,174,134);
+       padding: 2px;
+       font-size: 18px;
+   }
+   .vl {
+       border-left: 2px solid rgb(0,174,134);
+       height: 25px;
+       margin: 0px;
+       margin-left: 17px;
+   }
+   .calenderBox{
+       width: 20%;
+       /* border: 1px solid gray; */
+       padding: 15px;
+       
+       
+   }
+   .connect{
+       margin: 10px;
+       font-size: 25px;
+   }
+   .connectDet{
+       
+       margin: 10px;
+       font-size: 18px;
+   }
+   
+   .buttnn1{
+       color: white;
+       background-color: rgb(0,174,134);
+       padding: 10px 20px;
+       border: 0px;
+       border-radius: 5px;
+       margin-right: 30px;
+   
+   }
+   .buttnn2{
+       padding: 10px 45px;
+       border: 1px solid rgb(0,174,134);
+       border-radius: 5px;
+       color: rgb(0,174,134);
+       background-color: white;
+       
+   }
+   .Timeline{
+       margin: 0px;
+       padding: 20px; 
+   }
+   
+   .cont{
+       height: 200px;
+       position: relative;
+       /* text-align: center; */
+   }
+   .NoCurrent{
+       margin: 0px;
+       position: absolute;
+       top: 50%;
+       left: 35%;
+       font-size: 17px;
+       color: 
+       #c2c0bb;
+   }
+   .draftFlex{
+       border: 1px solid 
+       #c2c0bb;
+       display: flex;
+       /* justify-content: center; */
+       /* align-self: center; */
+       height: 50px;
+       font-size: 20px;
+       width: 70%;
+       margin: auto;
+       border-radius: 5px;
+       padding: 10px 20px;
+       margin-top: 10px;
+   }
+   .draftFlex > div:nth-child(1){
+       flex: 1;   
+       /* border: 1px solid rgb(0,174,134); */
+       border-radius: 50%;
+       text-align: center;
+       padding-top: 10px;
+       
+   }
+   .draftFlex > div:nth-child(2){
+       flex: 3.5;
+       padding-top: 9px;
+       font-size: 16px;
+   }
+   .flex{
+       display: flex;
+       /* border-bottom: 1px solid rgb(0,174,134); */
+   }
+   .box1 {
+       flex: 2;
+   }
+   .box1>h5{
+       margin-left: 20px;
+       text-align: left;
+   }
+   .box2 {
+       flex: 1;
+       padding-top: 18px;
+       padding-left: 25px;
+   }
+   .select{
+       width: 120px;
+       height: 30px;
+       margin-right: 10px;
+       border: none;
+   }
+   .jan, .feb, .mar, .apr, .may,.june{
+       flex: 1;
+       color:#c2c0bb;
+       text-align: center;
+       height: 250px;
+       font-size: 14px;
+   }
+   .ppaadd{
+       padding: 20px 50px;
+   }
+   .bor{
+       width: 80%;
+   }
+   .topAct{
+       border: 1px solid rgb(0, 210, 161);
+       margin: 30px;
+   
+   }
+   .draftFlex2{
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       width: 70%;
+       margin: auto;
+       border-radius: 5px;
+       padding: 10px 20px;
+       margin-top: 10px;
+   }
+   .a{
+       height: 120px;
+       text-align: left;
+   }
+   .Outstanding, .Overdue, .Paid, .Other{
+       flex: 1;
+       height: 80px;
+       padding-left: 30px;
+       text-align: center;
+       color: 
+       #b49a93
+   
+   }
+   .lastboxwidth{
+       width: 71.5%;
+       margin-top: 50px;
+   }
+   .radius{
+       border-radius: 5px;
+   }
+   .connect1{
+       width: 65%;
+       margin: auto;
+       color:
+       #acadad;
+       text-align: center;
+       margin-top: 200px;
+       cursor: pointer;
+   }
+   ul{
+       text-align: center;
+       width: 65%;
+       margin: auto;
+   }
+   .connect1>ul>li{
+       font-size: 13px;
+       text-align: center;
+       margin: auto;
+   }
+   .connect2{
+       cursor: pointer;
+       width: 36%;
+       margin: auto;
+       color:
+       #acadad;
+       margin-top: 20px;
+   }
+   .footlast2{
+       margin-right: 16px;
+   }
+   .footlast{
+       margin-right: 7px;
+   }
+   .footlast3{
+       color:
+       #acadad;
+       width: 67%;
+       margin: auto;
+       margin-top: 25px;
+   }
