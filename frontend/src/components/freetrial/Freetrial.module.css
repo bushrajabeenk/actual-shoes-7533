@@ -42,7 +42,7 @@
 }
 .part3 {
   margin-left: 250px;
-  padding: 140px 90px 60px 90px;
+  padding: 90px 90px 60px 90px;
   border-left: solid 1px #d8d8d8;
 }
 .part301 {
@@ -140,10 +140,16 @@
   color: #999999;
 }
 .crossbuttonimg {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .crossbutton {
-  margin-top: 20px;
+  /* border-left: solid 1px #d8d8d8; */
+  margin-left: 480px;
+  margin-top: 25px;
   border: 0;
+}
+.part03 {
+  margin-left: 250px;
+  border-left: solid 1px #d8d8d8;
 }

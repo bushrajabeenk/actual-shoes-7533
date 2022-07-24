@@ -125,101 +125,103 @@ const Freetrial = () => {
             </div>
           </div>
         </div>
-        <div className={styles.part3}>
-          <div className={styles.part301}>
-            <div className={styles.part31}>
-              <div style={{ fontWeight: 700 }}>Starter Plan</div>
-              <div>$24</div>
-            </div>
-            <div className={styles.part32}>Add Promo Code</div>
-            <div className={styles.part33}>
-              <div>Due today</div>
-              <div>$0</div>
-            </div>
-            <div className={styles.part34}>
-              <div>Due in 7 days</div>
-              <div>$24</div>
-            </div>
+        <div>
+          <div className={styles.part03}>
+            <button className={styles.crossbutton}>
+              <img
+                className={styles.crossbuttonimg}
+                src="cross.PNG"
+                alt="cross"
+              />
+            </button>
           </div>
-          <div className={styles.part302}>
-            <div className={styles.part35}>
-              <div>
-                <img src="star.PNG" alt="star" />
+          <div className={styles.part3}>
+            <div className={styles.part301}>
+              <div className={styles.part31}>
+                <div style={{ fontWeight: 700 }}>Starter Plan</div>
+                <div>$24</div>
               </div>
-              <div style={{ marginLeft: 8 }}>Cancel at any time</div>
-            </div>
-            <div className={styles.part35}>
-              <div>
-                <img src="star.PNG" alt="star" />
+              <div className={styles.part32}>Add Promo Code</div>
+              <div className={styles.part33}>
+                <div>Due today</div>
+                <div>$0</div>
               </div>
-              <div style={{ marginLeft: 8 }}>30 day money-back guarantee</div>
+              <div className={styles.part34}>
+                <div>Due in 7 days</div>
+                <div>$24</div>
+              </div>
             </div>
-          </div>
-          <div>
+            <div className={styles.part302}>
+              <div className={styles.part35}>
+                <div>
+                  <img src="star.PNG" alt="star" />
+                </div>
+                <div style={{ marginLeft: 8 }}>Cancel at any time</div>
+              </div>
+              <div className={styles.part35}>
+                <div>
+                  <img src="star.PNG" alt="star" />
+                </div>
+                <div style={{ marginLeft: 8 }}>30 day money-back guarantee</div>
+              </div>
+            </div>
+            <div>
+              <div className={styles.extra1}>
+                <img
+                  style={{ position: "absolute", marginTop: 7 }}
+                  src="user.PNG"
+                  alt="star"
+                />
+                <input
+                  style={{ marginLeft: 25 }}
+                  className={styles.card}
+                  type="text"
+                  placeholder="Cardholder name"
+                />
+              </div>
+            </div>
             <div className={styles.extra1}>
               <img
-                style={{ position: "absolute", marginTop: 7 }}
-                src="user.PNG"
+                style={{ position: "absolute", marginTop: 6 }}
+                src="card.PNG"
                 alt="star"
               />
               <input
-                style={{ marginLeft: 25 }}
                 className={styles.card}
+                style={{ width: 400, marginLeft: 35 }}
                 type="text"
-                placeholder="Cardholder name"
+                id="ccFormatMonitor"
+                placeholder="Card Number"
               />
-            </div>
-          </div>
-          <div className={styles.extra1}>
-            <img
-              style={{ position: "absolute", marginTop: 6 }}
-              src="card.PNG"
-              alt="star"
-            />
-            <input
-              className={styles.card}
-              style={{ width: 400, marginLeft: 35 }}
-              type="text"
-              id="ccFormatMonitor"
-              placeholder="Card Number"
-            />
-            <div className={styles.extra}>
-              <input
-                className={styles.card}
-                style={{ width: 60 }}
-                type="text"
-                id="inputExpDate"
-                placeholder="MM / YY"
-                maxlength="7"
-              />
+              <div className={styles.extra}>
+                <input
+                  className={styles.card}
+                  style={{ width: 60 }}
+                  type="text"
+                  id="inputExpDate"
+                  placeholder="MM / YY"
+                  maxlength="7"
+                />
 
-              <input
-                className={styles.card}
-                style={{ width: 50 }}
-                type="password"
-                id="cvv"
-                placeholder="CVV"
-              />
+                <input
+                  className={styles.card}
+                  style={{ width: 50 }}
+                  type="password"
+                  id="cvv"
+                  placeholder="CVV"
+                />
+              </div>
+            </div>
+            <button className={styles.cardbutton}> Start Free Trial</button>
+            <div className={styles.last}>
+              <div>
+                <img src="lock.PNG" alt="lock" />
+              </div>
+              <div style={{ marginTop: 2 }}>
+                Guaranteed safe & secure payments
+              </div>
             </div>
           </div>
-          <button className={styles.cardbutton}> Start Free Trial</button>
-          <div className={styles.last}>
-            <div>
-              <img src="lock.PNG" alt="lock" />
-            </div>
-            <div style={{ marginTop: 2 }}>
-              Guaranteed safe & secure payments
-            </div>
-          </div>
-        </div>
-        <div>
-          <button className={styles.crossbutton}>
-            <img
-              className={styles.crossbuttonimg}
-              src="cross.PNG"
-              alt="cross"
-            />
-          </button>
         </div>
       </div>
     </>
