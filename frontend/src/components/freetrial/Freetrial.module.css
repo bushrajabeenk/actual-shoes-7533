@@ -1,0 +1,155 @@
+.flex {
+    display: flex;
+    gap: 10px;
+  }
+  .part1 {
+    margin-top: 30px;
+  }
+  .part2 {
+    width: 450px;
+    margin-left: 130px;
+    margin-top: 80px;
+  }
+  .part21 {
+    font-size: 26px;
+    font-family: "proxima nova", "helvetica neue", sans-serif;
+    text-decoration: none solid rgb(41, 42, 43);
+  }
+  .part22 {
+    width: 250px;
+    border: 2px solid #00ad85;
+    padding: 30px 30px 120px 30px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 5px;
+  }
+  .part221 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "proxima nova", "helvetica neue", sans-serif;
+    text-decoration: none solid rgb(41, 42, 43);
+  }
+  .part222 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "proxima nova", "helvetica neue", sans-serif;
+    text-decoration: none solid rgb(135, 135, 135);
+    width: 245;
+    word-spacing: 0px;
+    line-height: 20px;
+    color: #878787;
+    margin: 10px 0 15px 0;
+  }
+  .part3 {
+    margin-left: 250px;
+    padding: 90px 90px 60px 90px;
+    border-left: solid 1px #d8d8d8;
+  }
+  .part301 {
+    background-color: #f2faff;
+    width: 300px;
+    height: 110px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .part302 {
+    background-color: #fefdf7;
+    width: 300px;
+    height: 58px;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    border: solid 1px #e4dec6;
+  }
+  .part31 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    height: 22px;
+  }
+  .part32 {
+    color: #00b289;
+    font-size: 14px;
+    height: 22px;
+  }
+  .part33 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 700;
+    height: 22px;
+    padding-top: 5px;
+  }
+  .part34 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    height: 22px;
+    padding-top: 5px;
+  }
+  .part35 {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .extra1 {
+    display: flex;
+    border: solid 1px black;
+    width: 338px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 1px;
+    font-size: 26px;
+    height: 40px;
+  }
+  .extra:hover {
+    text-overflow: inherit;
+    overflow: visible;
+  }
+  
+  .extra {
+    display: flex;
+    border: solid 1px white;
+    overflow: hidden;
+  }
+  .card {
+    padding: 5px;
+    border: 0;
+    outline: 0;
+  }
+  .card:focus {
+    outline: none !important;
+  }
+  .cardbutton {
+    background-color: #00ad85;
+    padding: 5px;
+    width: 340px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px 7px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .last {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    color: #999999;
+  }
+  .crossbuttonimg {
+    height: 25px;
+    width: 25px;
+  }
+  .crossbutton {
+    /* border-left: solid 1px #d8d8d8; */
+    margin-left: 480px;
+    margin-top: 25px;
+    border: 0;
+  }
+  .part03 {
+    margin-left: 250px;
+    border-left: solid 1px #d8d8d8;
+  }

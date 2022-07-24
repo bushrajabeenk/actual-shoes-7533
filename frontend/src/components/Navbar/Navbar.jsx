@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar.css";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -8,10 +9,12 @@ const Navbar = () => {
         <div className="container-fluid">
           <div className="leftIconDiv">
             <a className="navbar-brand ms-5 " to="/">
+            <Link to="/">
               <img
                 src="https://assets-global.website-files.com/58868bcd2ef4daaf0f072900/5e5fd7c602ca7cd432feb68e_bonsai-logo.svg"
                 alt=""
               />
+              </Link>
             </a>
           </div>
           <div
@@ -179,14 +182,14 @@ const Navbar = () => {
                 style={{ marginLeft: "30px", color: "#4C525A" }}
               >
                 <li className="nav-item p-2   ">
-                  <a className="nav-link  " href="#">
-                    Pricing
-                  </a>
+                  {/* <a className="nav-link  " href="#"> */}
+                  <Link  to="/price"><span className="nav-link  ">Pricing</span></Link> 
+                  {/* </a> */}
                 </li>
                 <li className="nav-item p-2 ">
-                  <a className="nav-link  " href="#">
-                    Reviews
-                  </a>
+                  {/* <a className="nav-link  " href="#"> */}
+                  <Link  to="/review"><span className="nav-link  ">Reviews</span></Link> 
+                  {/* </a> */}
                 </li>
               </ul>
             </div>
