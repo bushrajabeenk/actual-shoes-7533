@@ -18,15 +18,16 @@ We completed this project within a week.
 - References : [MDN Docs](https://developer.mozilla.org/en-US/) | [W3School](https://www.w3schools.com/) | [React](https://reactjs.org/) | [React Redux](https://react-redux.js.org/) | [Express](https://expressjs.com/) | [MongoDB](https://www.mongodb.com/)
 
 ## Tech Stack
-- React
-- React-Redux
-- MongoDB
-- Express
-- HTML 5
-- CSS 3
+
+- HTML 
+- CSS 
 - JavaScript
-- CSS Library — Bootstrap, Tailwind CSS, Material-UI
-- Github
+- ReactJS
+- NodeJS
+- Redux
+- MongoDB
+- ExpressJS
+- CSS Libraries — Bootstrap
 
 **Client:** [hellobonsai.com](https://hellobonsai.com/)
 
