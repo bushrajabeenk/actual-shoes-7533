@@ -13,8 +13,8 @@ We completed this project within a week.
 
 - Images : [hellobonsai.com](https://hellobonsai.com/)
 - Content : [hellobonsai.com](https://hellobonsai.com/)
-- CSS Library: [Bootstrap](https://getbootstrap.com/) | [Tailwind CSS](https://tailwindcss.com/) | [Material-UI](https://v4.mui.com/)
-- Icons : [Reacct-Font Awesome](https://fontawesome.com/)
+- CSS Library: [Bootstrap](https://getbootstrap.com/) 
+- Icons : [React-Font Awesome](https://fontawesome.com/)
 - References : [MDN Docs](https://developer.mozilla.org/en-US/) | [W3School](https://www.w3schools.com/) | [React](https://reactjs.org/) | [React Redux](https://react-redux.js.org/) | [Express](https://expressjs.com/) | [MongoDB](https://www.mongodb.com/)
 
 ## Tech Stack
