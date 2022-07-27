@@ -36,6 +36,15 @@ export const Login = () => {
       nav("/Home");
     }
   };
+
+  // const handelLogin = async () => {
+  //   const { data } = await axios.post(
+  //     "https://bonsai15.herokuapp.com/user/Signup",
+  //     formData
+  //   );
+  //   console.log(data);
+  //   nav("/Login");
+  // };
   return (
     <div>
       <div className="nav">
