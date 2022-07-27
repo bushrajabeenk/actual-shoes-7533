@@ -23,8 +23,8 @@ We completed this project within a week.
 - CSS 
 - JavaScript
 - ReactJS
-- NodeJS
 - Redux
+- NodeJS
 - MongoDB
 - ExpressJS
 - CSS Libraries — Bootstrap
