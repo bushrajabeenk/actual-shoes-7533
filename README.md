@@ -91,7 +91,7 @@ In thise section you can see the diffrent task that you parform allredy, or add 
 3. The main challenge of ours was to run the whole project without rerendering or reloading.
 
 ## Team
-Click on name to visit Github Account
+Click on the names to visit their Github Accounts
 
 - [K Bushra Jabeen](https://github.com/bushrajabeenk)
 - [Yash Tomar](https://github.com/yashtomar15)
@@ -108,12 +108,4 @@ Click on name to visit Github Account
 - [Sarswati Panda](https://www.linkedin.com/in/saraswati-panda/) 
 - [Nikesh Borkar](https://www.linkedin.com/in/nikesh-borkar/)
 - [Pratik Ganjale](https://www.linkedin.com/in/pratik-ganjale-4920aa166/)
-
-## Authors
-Click the name to visit their Github Profile
-- [Nikesh Borkar](https://github.com/NikeshBorkar)
-
-## Support
-
-For support, email - [nikeshborkar008@gmail.com](nikeshborkar008@gmail.com)
 
