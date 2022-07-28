@@ -6,7 +6,6 @@ Cloning [hellobonsai.com](https://hellobonsai.com/) was our project for Unit-5 C
 We completed this project within a week.
 
 - [Click here](https://hello-bonsai-unit-5.netlify.app/) to preview our project.
-- [Click here](https://drive.google.com/file/d/1ViDTS7XnaNqkX1xHdAVkxtRLwvF1jwxH/view) to watch a brief preview of our project in video format.
 
 ## Credits
 
