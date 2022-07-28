@@ -31,10 +31,10 @@ We completed this project within a week.
 
 ## Features
 - Login | Sign Up .
-- Price section for diffrent plan.
+- Price selection for diffrent plan.
 - Review page.
 - Dashbord for user
-- Add to task to creat our own projects.
+- Add to task to create a new task.
 - Payment Page.
 
 ## Screenshots of our Project for Overview
