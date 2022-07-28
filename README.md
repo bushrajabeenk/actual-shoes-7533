@@ -84,15 +84,11 @@ In thise section you can see the diffrent task that you parform allredy, or add 
 
 ## Challenges
 
-1. As every journey has some challenges and so was ours. In our team, all of the members were not familiar with each other so it was difficult for all of us to communicate and collaborate, there were some moments where members were not able to communicate with each other and had a conflict and it was hard for everyone to handle these conflicts.
+1. One major problem was to merge all of the files in a proper sequence.
 
-2. Another problem was to merge all of the files in a proper sequence which was again a difficult task for us because while merging and connecting all the pages some of the pages had the same name, and while running the site it was redirecting to some other pages so it was difficult to find the location and to rename the file.
+2. We faced challenges with CSS, as few of the team members used Bootstrap and Material-UI and remaining few members unknowingly used the same name class which already existed in bootstrap, which created an unpredictable conflict in the styling Part.
 
-3. We faced challenges with CSS, as few of the team members used Bootstrap and Material-UI and remaining few members unknowingly used the same name class which already existed in bootstrap, which created an unpredictable conflict in the CSS Part.
-
-4. We faced difficulties to manage the routes, page, dependencies to work at a time.
- 
-5. The main challenge of ours was to run the whole project without rerendering or reloading.
+3. The main challenge of ours was to run the whole project without rerendering or reloading.
 
 ## Team
 Click on name to visit Github Account
