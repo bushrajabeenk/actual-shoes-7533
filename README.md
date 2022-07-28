@@ -83,15 +83,12 @@ In thise section you can see the diffrent task that you parform allredy, or add 
 ![Checkout](https://github.com/bushrajabeenk/actual-shoes-7533/blob/main/readmeimg/task.png)
 
 ## Challenges
-
 1. One major problem was to merge all of the files in a proper sequence.
-
 2. We faced challenges with CSS, as few of the team members used Bootstrap and Material-UI and remaining few members unknowingly used the same name class which already existed in bootstrap, which created an unpredictable conflict in the styling Part.
-
 3. The main challenge of ours was to run the whole project without rerendering or reloading.
 
 ## Team
-Click on the names to visit their Github Accounts
+Click on the names to visit the Github Accounts
 
 - [K Bushra Jabeen](https://github.com/bushrajabeenk)
 - [Yash Tomar](https://github.com/yashtomar15)
@@ -100,8 +97,7 @@ Click on the names to visit their Github Accounts
 - [Pratik Ganjale](https://github.com/pratikganjale55)
 
 ## 🔗 Linkedin
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikesh-borkar/)
+Click on the names to visit the LinkedIn Accounts
 
 - [K Bushra Jabeen](https://www.linkedin.com/in/k-bushra-jabeen-9a8b95126/)
 - [Yash Tomar](https://www.linkedin.com/in/yashtomar15/) 
